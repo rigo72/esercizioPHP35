@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <form action="script_login.php" method="post">
-        Username<input type="text" name="username"> <br>
-        Password<input type="password" name="password"> <br>
-        <input type="submit">
-    </form>
+<body style="margin-left: 650px;">
+    <div class="container">
+        <div class="card">
+            <a class="login">Log in</a>
+            <div class="inputBox">
+                <form action="script_login.php" method="post">
+                    <input type="text" required="required" name="username">
+                    <span class="user">Username</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="password">
+                <span>Password</span>
+            </div>
+            <button class="enter"><a href="script_login.php" style="text-decoration: none;">Login</a></button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
